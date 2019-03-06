@@ -1,92 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" type="text/css" href="solitaire.css">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <!--<link rel="stylesheet" type="text/css" href="css/solitaire.css">-->
 
     <style>
-        .card {height: 600px;
-            width: 500px;
-            position: absolute;
-            z-index: 2;
-            top: 200px;
-            left: 520px;
+
+        .gradient {
+            background-image: url('images/gradient.jpg');
+            background-repeat: repeat;
         }
 
-        .kingspades {height: 600px;
+        .card {
+            /*height: 600px;*/
+            /*width: 500px;*/
             position: absolute;
-            top: 250px;
-            left: 520px;
+            z-index: 2;
+            top: 100px;
+            left: 150px;
+        }
+
+        .kingspades {
+            /*height: 600px;*/
+            position: absolute;
+            top: 125px;
+            left: 150px;
             z-index: 3;
         }
 
-        .queenhearts {height: 600px;
+        .queenhearts {
+            /*height: 600px;*/
             position: absolute;
-            top: 300px;
-            left: 520px;
-            z-index: 4;}
+            top: 150px;
+            left: 150px;
+            z-index: 4;
+        }
 
 
-        .jackclubs {height: 600px;
+        .jackclubs {
+            /*height: 600px;*/
             position: absolute;
-            top: 350px;
-            left: 520px;
-            z-index: 5;}
+            top: 175px;
+            left: 150px;
+            z-index: 5;
+        }
 
-        .tendiamonds {height: 600px;
+        .tendiamonds {
+            /*height: 600px;*/
             position: absolute;
-            top: 400px;
-            left: 520px;
-            z-index: 6;}
-
-        .felt2 {
-            position: absolute;
-            top: 100px;
-            left: 100px;
-            z-index: 1;
+            top: 200px;
+            left: 150px;
+            z-index: 6;
         }
 
         .felt {
-            position: absolute;
-            top: 0px;
+            background-image: url('images/felt.jpg');
+            position: relative;
+            top: 100px;
+            left: 125px;
+            /*margin: 0 auto;*/
+            width: 400px;
+            height: 400px;
         }
 
-
     </style>
-
 </head>
-<body>
 
-<div class="card">
-    <img src="images/card.png" style="width: 150px">
-</div><!--card-->
-
-<div class="kingspades">
-    <img src="images/kingspades.png" style="width: 150px">
-</div>
-
-<div class="queenhearts">
-<img src="images/queenhearts.png" style="width: 150px">
-    </div>
-
-<div class="jackclubs">
-<img src="images/jackclubs.png" style="width: 150px">
-</div>
-
-<div class="tendiamonds">
-<img src="images/tendiamonds.png" style="width: 150px">
-</div>
+<body class="gradient">
 
 <div class="felt">
-<img src="images/felt.jpg" style="width: 1200px" height="800px">
-</div>
 
-<div class="felt2">
-    <img src="images/felt2.jpg" style="width: 1000px" height="600px">
-</div>
+    <div class="card"><img src="images/card.png" style="width: 100px" alt="playing card"></div>
+    <div class="kingspades"><img src="images/kingspades.png" style="width: 100px"></div>
+    <div class="queenhearts"><img src="images/queenhearts.png" style="width: 100px"></div>
+    <div class="jackclubs"><img src="images/jackclubs.png" style="width: 100px"></div>
+    <div class="tendiamonds"><img src="images/tendiamonds.png" style="width: 100px"></div>
 
-<img src="images/gradient.jpg">
+</div><!-- end of felt-->
 
 </body>
 </html>
