@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="shortcut icon" href="../HappyTails/favicon.ico" />
+    <style>
+        .topnav { background-color: rgb(222,190,210);
+            overflow: hidden;
+            margin-bottom: 10px;}
+        .topnav a {
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 24px 50px;
+            text-decoration: none;
+            font-size: 40px;
+            font-family: Inconsolata}
+
+        .active, hover {
+            background-color: #717171;}
+
+        .page3photo {
+            width: 100%;
+            position: relative;
+            margin: auto;
+            padding-top: 10px;}
+
+        .footer {
+            position: relative;
+            left: 0;
+            bottom: 0;
+            padding: 2px;
+            width: 100%;
+            color: rgb(222,190,210);
+            text-align: center;
+            font-size: 22px;
+        }
+
+        .logo {
+            position: absolute;
+            width:1600px;
+            left: 1150px;
+            padding-top: 5px;
+            -webkit-transition: width 2s; /* Safari */
+            transition: width 2s;
+        }
+        .logo:hover {
+            animation: shake 0.5s;
+            animation-iteration-count: infinite;}
+
+        @keyframes shake {
+            0% { transform: translate(1px, 1px) rotate(0deg); }
+            10% { transform: translate(-1px, -2px) rotate(-1deg); }
+            20% { transform: translate(-3px, 0px) rotate(1deg); }
+            30% { transform: translate(3px, 2px) rotate(0deg); }}
+
+    </style>
+</head>
+<body>
+<div class="topnav">
+    <a href="Home.html">Home</a>
+    <a href="Adopt.html">Adopt</a>
+    <a class="active" href="Support.html">Support</a>
+    <a href="AboutUs.html">About</a>
+    <a href="Contact%20Us.html">Contact</a>
+    <div class = "logo">
+        <img src="pictures/logo-01.png" alt="Logo" style="width: 17%">
+    </div>
+</div><!--closing for topnav-->
+
+<div class="page3photo"><!-- Page 3 Photo -->
+    <img src="pictures/supportfinal-04.png" style="width:100%">
+</div>
+
+<!-- footer -->
+<div class="footer">
+    <p>© Happy Tails Rescue. All rights reserved.
+</div><!--closing for bottomnav-->
+
+</body>
+</html>

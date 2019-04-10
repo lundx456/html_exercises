@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="shortcut icon" href="../HappyTails/favicon.ico" />
+</head>
+<style>
+
+    .topnav { background-color: rgb(222,190,210);
+        overflow: hidden;
+        margin-bottom: 10px;}
+    .topnav a {
+        float: left;
+        color: white;
+        text-align: center;
+        padding: 24px 50px;
+        text-decoration: none;
+        font-size: 40px;
+        font-family: Inconsolata}
+
+    .active, hover {
+        background-color: #717171;}
+
+    .logo {
+        position: absolute;
+        width:1600px;
+        left: 1150px;
+        padding-top: 5px;
+        -webkit-transition: width 2s; /* Safari */
+        transition: width 2s;
+    }
+    .logo:hover {
+        animation: shake 0.5s;
+        animation-iteration-count: infinite;}
+
+    @keyframes shake {
+        0% { transform: translate(1px, 1px) rotate(0deg); }
+        10% { transform: translate(-1px, -2px) rotate(-1deg); }
+        20% { transform: translate(-3px, 0px) rotate(1deg); }
+        30% { transform: translate(3px, 2px) rotate(0deg); }}
+
+    .footer {
+        position: relative;
+        left: 0;
+        bottom: 0;
+        padding: 2px;
+        width: 100%;
+        color: rgb(222,190,210);
+        text-align: center;
+        font-size: 22px;
+    }
+
+    /* Style inputs with type="text", select elements and textareas */
+    input[type=text], select, textarea {
+        width: 100%; /* Full width */
+        padding: 12px; /* Some padding */
+        border: 1px solid #ccc; /* Gray border */
+        border-radius: 4px; /* Rounded borders */
+        box-sizing: border-box; /* Make sure that padding and width stays in place */
+        margin-top: 6px; /* Add a top margin */
+        margin-bottom: 16px; /* Bottom margin */
+        resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+        font-family: Inconsolata;
+        font-size: 20px;
+    }
+
+    /* Style the submit button with a specific background color etc */
+    input[type=submit] {
+        background-color: rgb(222,190,210);
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-family: Inconsolata;
+        font-size: 30px;
+    }
+
+    /* When moving the mouse over the submit button, add a darker green color */
+    input[type=submit]:hover {
+        background-color: rgb(222,190,210);
+    }
+
+    /* Add a background color and some padding around the form */
+    .contactcontainer {
+        border-radius: 5px;
+        background-color: none;
+        padding: 20px;
+        font-family: Inconsolata;
+        color: rgb(222,190,210);
+        font-size: 30px;
+        font-weight: bolder;
+    }
+</style>
+<body>
+
+
+
+<div class="topnav">
+    <a href="Home.html">Home</a>
+    <a href="Adopt.html">Adopt</a>
+    <a href="Support.html">Support</a>
+    <a href="AboutUs.html">About</a>
+    <a class="active" href="Contact%20Us.html">Contact</a>
+    <div class = "logo">
+        <img src="pictures/logo-01.png" alt="Logo" style="width: 17%">
+    </div>
+</div><!--closing for topnav-->
+
+<!-- Contact Form-->
+
+
+
+<div class="contactcontainer">
+    <form action="action_page.php">
+
+        <title>Contact Us</title>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your first and last name..">
+
+        <label for="email">Email Address</label>
+        <input type="text" id="email" name="email" placeholder="Your email address..">
+
+        <label for="reason">Reason for Inquiry</label>
+        <select id="reason" name="reason">
+            <option value="adoption">Adoption</option>
+            <option value="donate">Donate</option>
+            <option value="foster">Foster</option>
+            <option value="volunteer">Volunteer</option>
+            <option value="other">Other Question</option>
+        </select>
+
+        <label for="description">Brief Description</label>
+        <textarea id="description" name="description" placeholder="Write something.." style="height:200px"></textarea>
+
+        <input type="submit" value="Submit">
+
+    </form>
+</div><!--container closed-->
+
+    <!-- footer -->
+    <div class="footer">
+        <p>© Happy Tails Rescue. All rights reserved.
+    </div><!--closing for bottomnav-->
+</body>
+</html>
